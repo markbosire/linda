@@ -1,0 +1,666 @@
+body{
+  
+  background-color: var(--background-color) ;
+  font-family: 'Rajdhani', sans-serif;
+                                                
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #ff8da4; /* Replace with your primary color */
+  --secondary-color: #6ff7d1; /* Replace with your secondary color */
+  --background-color: #1d0c13; /* Replace with your background color */
+  --tertiary-color: #73304c;
+  --alternative-color: #2b121d;
+   /* Replace with your tertiary color */
+}
+.navbar{
+  width: 100%;
+  padding: 20px 0;
+}
+.navbar .navbarcontainer{
+  margin: 0 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo{
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 20px;
+}
+.navbar .buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+ .btn {
+  width: 90px;
+  height: 40px; 
+  min-width: fit-content;
+  border: 0;
+  outline: none;
+ 
+  cursor: pointer;
+  position: relative;
+ font-weight: 600;
+  text-transform: uppercase;
+
+  clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+}
+
+ .btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+
+  clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+}
+
+.btn__label {
+  height: 10px;
+  font-size: .40rem;
+  position: absolute;
+  bottom: -4px;
+  right: 8%;
+  padding: 0 5px;
+
+  z-index: 3;
+}
+.btn__glitch {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  filter: drop-shadow(-2px 3px #67e3f3) drop-shadow(-1px -3px #02d8f3) drop-shadow(2px 1px #02d8f3);
+}
+.background{
+  background-color: var(--background-color);
+
+
+}
+.primary{
+  background-color: var(--primary-color);
+
+
+}
+.secondary{
+  background-color: var(--secondary-color);
+}
+.fontprimary{
+  color: var(--primary-color)!important;
+}
+.circleprimary{
+  border: 1px solid var(--primary-color)!important;
+  width: 30px!important;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+  height: 30px!important;
+  border-radius: 50%!important;
+}
+.navbut{
+  color: var(--primary-color)!important;
+  
+
+}
+.inputOutline{
+  min-width: 20px!important;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  border: 2px solid var(--primary-color);
+  background-color: var(--alternative-color);
+  color: var(--primary-color);
+  padding: 10px;
+
+  
+}
+.employeeContainer input {
+  text-align: center;
+}
+
+.employeeContainer ::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.employeeContainer :-moz-placeholder {
+  text-align: center;
+}
+.paddingBread{
+  margin: 10px 0!important;
+}
+.fontBackground{
+  color: var(--background-color);
+}
+.infoComponent,.course-grid-component,.employeeformcomponent{
+
+  margin: 100px 0;
+}
+.grid-component,.infoComponent,.course-grid-component,.employeeformcomponent{
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.employeeContainer{
+
+  clip-path: polygon(95% 0, 100% 5%, 100% 100%, 5% 100%, 0% 90%, 0 0);
+  width: fit-content;
+  background-color: var(--alternative-color);
+}
+.employeeContainer .employeeContainerSection{
+  display: flex;
+  align-items: flex-start;
+ gap: 100px;
+  padding: 20px;
+}
+.employeeSubContainer{
+  width: 400px;
+}
+.employeeSubContainer .employeeSubContainerSection{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+.employeeSubContainer p{
+ color: var(--secondary-color);
+ font-size: 20px;
+ min-width: 100%;
+
+}
+.names{
+  display: flex; 
+  gap:10px;
+}
+.images{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.images img{
+  width: 150px;
+  height: auto;
+}
+.course-grid-component .r{
+  display: flex;
+ 
+  
+  justify-content: left;
+  flex-direction: column;
+  width: fit-content;
+}
+.course-grid-component section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.infoComponentContainer{
+  background-color: var(--alternative-color);
+  clip-path: polygon(100% 19.5000px ,100% 100%,35.9000px  100%,13.1000px  calc(100% - 45.0000px),12.4000px  calc(100% - 136.5000px),0.0000px  calc(100% - 160.5000px),0.0000px  0.0000px ,calc(100% - 19.5000px) 0.0000px ,100% 19.5000px ); 
+ 
+  width: 700px;
+}
+
+.infoComponentSubContainer{
+  width: 100%;
+ 
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.infoComponentSubContainer p{
+ max-width: 70%;
+}
+.infoComponent .mt{
+  width: 10px;
+  height: 10px;
+  color: var(--background-color);
+}
+.infoComponentSubContainer .top-part{
+  color: var(--primary-color);
+  
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+ gap: 30px;
+}
+.infoComponent .top-part img{
+width: 100px;
+height: 100px;
+margin-left: 10px;
+}
+.infoComponent .bottom-part{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.btn:hover .btn__glitch,
+.btn:hover .btn-content::after,
+.btn:focus .btn__glitch,
+.btn:focus .btn-content::after {
+  display: block;
+  animation: glitch-animation 2s linear 0s infinite;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: fit-content;
+}
+.course-grid-container,.home-grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: fit-content;
+}
+
+.grid-item{
+  width: 400px;
+  background-color: var(--alternative-color);
+  clip-path: polygon(95% 0, 100% 20%, 100% 100%, 5% 100%, 0% 80%, 0 0);
+}
+.course-grid-item,.home-grid-item{
+  cursor: pointer;
+  border: 1px solid var(--tertiary-color);
+  width: 300px;
+  height: 165px;
+  background-color: var(--alternative-color);
+}
+.home-grid-item{
+  width: 25vw;
+  height: auto;
+ 
+}
+.grid-item section{
+  align-items: flex-start;
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+}
+.course-grid-item section,.home-grid-item section{
+  align-items: flex-start;
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.home-grid-item section{
+justify-content: left;
+align-items: normal;
+}
+.HomeNavbar .active{
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+}
+
+.course-grid-item img,.home-grid-item img{
+  width: 81px;
+  height: 80px;
+  object-fit: contain;
+}
+.home-grid-item img{
+  width: 150px;
+  height: 150px;
+}
+.home-grid-item .imageContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item img {
+ width: 50px;
+ height: 50px;
+}
+.home-grid-item p{
+  height: 45px;
+}
+.course-grid-item p,.home-grid-item p{
+  
+  font-size: 16px; 
+}
+.home-grid-item p,.home-grid-item h1{
+  color: var(--secondary-color);
+}
+.home-grid-item h1{
+  font-size: 20px;
+}
+.home-grid-item p span{
+  color: var(--primary-color);
+}
+.grid-item p{
+  color: var(--primary-color);
+  font-size: 16px;
+  max-width: 70%;
+}
+.course-grid-info{
+  border: 1px solid var(--tertiary-color);
+  height: 479px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.course-grid-info .top{
+  text-align: left;
+  flex-direction: column;
+  display: flex;
+ justify-self: left;
+  
+  gap: 10px;
+}
+.course-grid-info .top h1{
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+.course-grid-info .top p{
+  font-size: 16px;
+  max-width: 100%;
+  color: var(--primary-color);
+}
+.Join{
+  margin-top: 100px;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+
+}
+.Join input{
+  font-family: 'Rajdhani', sans-serif;
+
+}
+.Join>section{
+  color: var(--primary-color);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.Join .title{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.Join .Footer{
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.Join .window{
+
+
+  width: 400px;
+  height: 400px;
+  background-color: var(--alternative-color);
+  clip-path: polygon(100% 19.5000px ,100% 100%,35.9000px  100%,13.1000px  calc(100% - 45.0000px),12.4000px  calc(100% - 136.5000px),0.0000px  calc(100% - 160.5000px),0.0000px  0.0000px ,calc(100% - 19.5000px) 0.0000px ,100% 19.5000px ); 
+ 
+}
+.Join .window section{
+
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 45px 20px;
+
+}
+.Join .window input{
+  
+ 
+  font-size: 20px;
+  padding: 10px 5px;
+  width: 300px;
+  background-color: var(--alternative-color);
+  color: var(--tertiary-color);
+  border: 2px dashed var(--tertiary-color);}
+ 
+  .Join .window section span{
+    margin-left: 0; 
+    margin-right: auto;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .HomeNavbar{
+    display: flex;
+
+  }
+  .HomeNavbar span{
+ 
+   
+    background-color: var(--tertiary-color);
+  
+  }
+  .HomeNavbar span div{
+    margin: 1px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--alternative-color);
+    color: var(--primary-color);
+
+  }
+  .HomeNavbar .first,.HomeNavbar .first div{
+    clip-path: polygon( 20.00% 0.00%, 100% 0.00%, 100% 20.00%, 100% 100%, 80.00% 100%, 20.00% 100%, 0.00% 100%, 0.00% 20.00% );
+  }
+  .HomeNavbar .last,.HomeNavbar .last div{
+    clip-path: polygon( 20.00% 0.00%, 80.00% 0.00%, 100% 20.00%, 100% 100%, 80.00% 100%, 20.00% 100%, 0.00% 100%, 0.00% 0.00% );
+  }
+  .HomePage,.PlayPage{
+    margin: 100px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .HomePage section,.PlayPage section{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+  .PlayComponent{
+    padding-bottom: 50px;
+    width: 75vw;
+    height: auto;
+    border: 1px solid var(--tertiary-color);
+  }
+  .passwords{
+    padding: 20px;
+  
+    background-color: var(--alternative-color);
+    color: var(--primary-color);
+  }
+  .password-container{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .password-item {
+    border: 1px solid var(--primary-color);
+    padding: 5px;
+    margin: 5px;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .selected {
+    border-color: var(--secondary-color); /* Change the border color when selected */
+    color: var(--secondary-color);
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+   
+@media screen and (max-width:900px) {
+ 
+  .grid-item{
+    width: 350px;
+    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0); }
+
+ 
+}
+@media screen and (max-width:750px) {
+  .images{
+    display: none;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .grid-item img {
+    width: 60px;
+    height: 60px;
+   }
+   .grid-item p{
+    color: var(--primary-color);
+    font-size: 16px;
+    max-width: 80%;
+  }
+  .grid-component{
+    width: 100vw;
+  }
+  .grid-container{
+    width: 90%;
+  
+    margin: 10px;
+  }
+  .grid-item{
+    width: 100%;
+  }
+
+  .grid-container{
+  
+    grid-template-columns: repeat(1, 1fr);
+  
+  }
+ 
+  .btn {
+    font-size: 12px;
+    width: 75px;
+    height: 30px; }
+  .infoComponent{
+    width: 100vw;
+  }
+  .infoComponentContainer{
+    width: 100%;
+    margin: 10px;
+  }
+  .infoComponentSubContainer{
+    gap: 16px;
+  }
+  .infoComponentSubContainer .top-part{
+    font-size: 20px;
+    gap: 20px;
+  }
+  .infoComponent .top-part img{
+    width: 80px;
+    height: 80px;
+    margin-left: 8px;
+    }
+  
+
+}
+@media screen and (max-width:500px) {
+ 
+  .employeeSubContainer{
+   width: 80vw;
+  }
+
+  .infoComponentSubContainer{
+    gap: 12px;
+  }
+  .infoComponentSubContainer .top-part{
+    font-size: 16px;
+    gap: 16px;
+  }
+  .infoComponent .top-part img{
+    width: 70px;
+    height: 70px;
+    margin-left: 7px;
+    }
+
+  
+}
+@media screen and (max-width:400px) {
+  .grid-component{
+    width: 100vw;
+  }
+  .grid-container{
+    width: 100%;
+  
+    margin: 10px;
+  }
+  .grid-item{
+    width: 100%;
+  }
+
+.infoComponentSubContainer p{
+  max-width: 65%;
+ }
+ .Join>section{
+  margin: 0 20px;
+}
+.Join .window section div{
+  width: 85px;
+height: 40px;
+}
+.Join .window{
+  width: 120px;
+
+
+
+  width: 92.5vw;
+  height: 92.5vw;
+
+}
+.Join .window section{
+  gap: 15px;
+}
+.Join .window input {
+  width: 62.5vw;
+  padding: 5px;
+}
+.Join .window section span {
+  font-size: 20px;
+}
+
+}
